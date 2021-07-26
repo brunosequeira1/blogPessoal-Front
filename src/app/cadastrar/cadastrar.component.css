@@ -1,0 +1,18 @@
+#img-bg {
+    background-image: url('../../assets/img/img-bg-cadastrar.jpg');
+    min-height: 969px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.temporizadorCadastrar:hover{
+    color: #198754;
+    background-color: white;
+    transition-duration: 1s;
+}
+.temporizadorCancelar:hover{
+    color: #dc3545;
+    background-color: white;
+    transition-duration: 1s;
+}

@@ -1,0 +1,13 @@
+#img-bg {
+    background-image: url('../../assets/img/imagem-background-entrar.jpg');
+    min-height: 969px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.temporizador:hover{
+    color: #198754;
+    background-color: white;
+    transition-duration: 1s;
+}
