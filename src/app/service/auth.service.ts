@@ -20,8 +20,8 @@ entrar(userlogin: UserLogin ): Observable<UserLogin>{
 
 }
 
-cadastrar(user: User): Observable<User>{
-  return this.http.post<User>('http://localhost:8080/api/v1/usuario/salvar', user)
+cadastrar(user: User){
+  return this.http.post('http://localhost:8080/api/v1/usuario/salvar', user)
 
 }
 
