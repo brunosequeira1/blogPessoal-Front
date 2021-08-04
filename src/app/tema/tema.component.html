@@ -19,7 +19,7 @@
 
                     <div class="form-group">
 
-                        <input [(ngModel)]='tema.descricao' type="text" class="form-control" id="descricao" placeholder="Digite a descrição do tema">
+                        <input [(ngModel)]='tema.descricao' type="text" class="form-control mb-3" id="descricao" placeholder="Digite a descrição do tema">
 
                     </div>
 
@@ -68,8 +68,8 @@
                     <th>{{tema.id}}</th>
                     <td>{{tema.descricao}}</td>
                     <td class="d-flex justify-content-end">
-                      <button class="btn btn-info me-3">Editar</button>
-                      <button class="btn btn-danger">Apagar</button>
+                      <button class="btn btn-info me-3" [routerLink]="['/tema-edit', tema.id]">Editar</button>
+                      <button class="btn btn-danger" [routerLink]="['/tema-delete', tema.id]">Apagar</button>
                     </td>
                   </tr>                
                 </tbody>
