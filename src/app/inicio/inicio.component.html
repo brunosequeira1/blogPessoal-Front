@@ -81,6 +81,10 @@
             <div class="card-footer">
               <small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}} às {{item.data | date: 'HH:mm'}}</small>
             </div>
+
+            <a [routerLink] = "['/postagem-edit', item.id]" class="text-info" href="">Editar</a>
+            <a [routerLink] = "['/postagem-delete', item.id]" class="text-danger" href="">Apagar</a>
+
           </div>
         </div>
       </div>
