@@ -13,7 +13,6 @@ export class TemaService {
 
   token = {
     headers: new HttpHeaders().set('Authorization', environment.token)
-
   }
 
   getAllTemas(): Observable<Tema[]>{

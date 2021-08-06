@@ -10,10 +10,8 @@ import { UserLogin } from '../model/UserLogin';
 })
 export class AuthService {
 
-  constructor(
-    private http: HttpClient
-
-  ) { }
+  constructor(private http: HttpClient) {}
+  
 
 entrar(userlogin: UserLogin ): Observable<UserLogin>{
   return this.http.post<UserLogin>('http://localhost:8080/api/v1/usuario/credenciais', userlogin)
@@ -23,6 +21,10 @@ entrar(userlogin: UserLogin ): Observable<UserLogin>{
 cadastrar(user: User){
   return this.http.post('http://localhost:8080/api/v1/usuario/salvar', user)
 
+}
+
+getByIdUser(id: number): Observable<User>{
+  return this.http.get<User>(`http://localhost:8080/api/v1/usuario/${id}`)
 }
 
 logado(){
